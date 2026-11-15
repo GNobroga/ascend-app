@@ -1,0 +1,26 @@
+export const RESERVED_SLUGS: ReadonlySet<string> = new Set([
+  'accept-invitation',
+  'account',
+  'admin',
+  'api',
+  'app',
+  'assets',
+  'auth',
+  'b',
+  'businesses',
+  'email-verified',
+  'forgot-password',
+  'help',
+  'login',
+  'logout',
+  'me',
+  'privacy',
+  'register',
+  'reset-password',
+  'settings',
+  'support',
+  'terms',
+  'welcome',
+]);
+
+export const isReservedSlug = (slug: string) => RESERVED_SLUGS.has(slug);

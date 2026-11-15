@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "NestJS: Debug",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeExecutable": "pnpm",
+            "runtimeArgs": [
+                "--filter",
+                "api",
+                "start:debug"
+            ],
+            "envFile": "${workspaceFolder}/.env",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "restart": true,
+            "type": "node"
+        }
+    ]
+}
